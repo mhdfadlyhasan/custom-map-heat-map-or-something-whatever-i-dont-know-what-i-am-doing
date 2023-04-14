@@ -2,7 +2,7 @@ Stack
 
 1. leaflet js https://leafletjs.com/
 1. https://github.com/Leaflet/Leaflet.heat
-1. i've 0 skill and experience for building front-end so please forgive me for the quality
+1. ~~i've 0 skill and experience for building front-end so please forgive me for the quality~~
 
 To Do
 
