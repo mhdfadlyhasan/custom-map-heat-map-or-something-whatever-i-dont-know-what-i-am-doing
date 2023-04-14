@@ -11,8 +11,10 @@ To Do
 
 How to use,
 
+
 1. clone, npm install
 1. run vscode live server to deploy
+1. you can skip step 1 and 2 and go here directly lol https://mhdfadlyhasan.github.io/custom-map-heat-map-or-something-whatever-i-dont-know-what-i-am-doing/
 1. create a coordinate and value json in https://jsonbin.io/quick-store/
 
 ```
@@ -32,4 +34,7 @@ How to use,
 
 1. put the Access url on your json the left bottom input
 1. click anywhere on the map
-   the heatmap should be created ![heatmap](example-heatmap.png)
+   the heatmap should be created
+   
+   ![heatmap](example-heatmap.png)
+that red circle actually is an clickbait, sike
