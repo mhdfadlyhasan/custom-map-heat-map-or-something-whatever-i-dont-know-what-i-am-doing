@@ -12,7 +12,7 @@ async function onUrlButton(e) {
 
   var listOfNode = [];
   if (res.data.record == null) {
-    res.data.data.forEach((e) => {
+    res.data.forEach((e) => {
       listOfNode.push([e["lat"], e["lng"], e["value"]]);
     });
   } else {
