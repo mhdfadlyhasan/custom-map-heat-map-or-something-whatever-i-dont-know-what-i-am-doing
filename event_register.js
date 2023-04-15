@@ -21,7 +21,6 @@ async function onUrlButton(e) {
     });
   }
 
-  console.log(listOfNode);
   L.heatLayer(listOfNode, { radius: 10 }).addTo(map);
 }
 
