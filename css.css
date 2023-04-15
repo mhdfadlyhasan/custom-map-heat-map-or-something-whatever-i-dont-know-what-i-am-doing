@@ -7,9 +7,11 @@ body {
   margin: 0px;
   height: 100%;
 }
-
+#floating-form {
+  position: absolute;
+  display: block;
+}
 .box {
-  background: red;
   position: absolute;
   top: 0px;
   right: 0px;

@@ -1,8 +1,11 @@
-var defaultCoordinate = document
-  .getElementById("default-coordinate")
-  .value.split(",");
-var map = L.map("map").setView(defaultCoordinate, 13);
-
+var defaultCoordinateButton = document.getElementById(
+  "default-coordinate-button"
+);
+var urlButton = document.getElementById("url-json-button");
+var map = L.map("map").setView(
+  document.getElementById("default-coordinate").value.split(","),
+  13
+);
 var circle = L.circle([-7.282103, 112.747903], {
   color: "red",
   fillColor: "#f03",

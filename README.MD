@@ -6,11 +6,10 @@ Stack
 
 To Do
 
-1. more dynamic starting point
-1. support any json provider
+1. ~~more dynamic starting point~~
+1. support any json provider (half way there)
 
 How to use,
-
 
 1. clone, npm install
 1. run vscode live server to deploy
@@ -35,6 +34,5 @@ How to use,
 1. put the Access url on your json the left bottom input
 1. click anywhere on the map
    the heatmap should be created
-   
    ![heatmap](example-heatmap.png)
-that red circle actually is an clickbait, sike
+   that red circle actually is an clickbait, sike
