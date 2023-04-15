@@ -1,18 +1,32 @@
 map.on("click", onMapClick);
+urlButton.addEventListener("click", onUrlButton);
+defaultCoordinateButton.addEventListener("click", onDefaultCoordinateButton);
 
-async function onMapClick(e) {
+function onMapClick(e) {
   alert("You clicked the map at " + e.latlng);
+}
+
+async function onUrlButton(e) {
   var url = document.getElementById("url-json").value;
-  const res = await axios.get(url);
+  var res = await axios.get(url);
 
   var listOfNode = [];
-  res.data.record.forEach((e) => {
-    listOfNode.push([e["lat"], e["lng"], e["value"]]);
-  });
+  if (res.data.record == null) {
+    res.data.forEach((e) => {
+      listOfNode.push([e["lat"], e["lng"], e["value"]]);
+    });
+  } else {
+    res.data.record.forEach((e) => {
+      listOfNode.push([e["lat"], e["lng"], e["value"]]);
+    });
+  }
+
   L.heatLayer(listOfNode, { radius: 10 }).addTo(map);
 }
 
-// [
-//   [-7.282103, 112.747903, 1300000], // lat, lng, intensity
-//   [-7.282103, 112.748013, 2000000],
-// ],
+function onDefaultCoordinateButton(e) {
+  map.setView(
+    document.getElementById("default-coordinate").value.split(","),
+    13
+  );
+}

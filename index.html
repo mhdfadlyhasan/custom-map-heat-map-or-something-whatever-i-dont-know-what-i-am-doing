@@ -25,9 +25,27 @@
     <link rel="stylesheet" href="css.css" />
   </head>
   <body>
+    <span class="floating-form">
+      <input type="text" id="url-json" value="put your json url here" /><button
+        type="button"
+        id="url-json-button"
+      >
+        submit url
+      </button>
+      <br />
+      <input
+        type="text"
+        id="default-coordinate"
+        value="-7.282103,112.747903"
+      /><button
+        type="button"
+        id="default-coordinate-button"
+        value="submit cooridnate"
+      >
+        submit coordinate
+      </button>
+    </span>
     <div id="map" class="leaflet-container"></div>
-    <input type="text" id="url-json" /> <br />
-    <input type="text" id="default-coordinate" value="-7.282103,112.747903" />
   </body>
   <footer>
     <script src="./script.js"></script>
