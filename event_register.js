@@ -12,6 +12,7 @@ function onMapClick(e) {
     "value": 10
   }`;
   alert("You clicked the map at \n" + value);
+  new L.marker(e.latlng).addTo(map);
 }
 
 async function onUrlButton(e) {
@@ -29,7 +30,7 @@ async function onUrlButton(e) {
     });
   }
 
-  L.heatLayer(listOfNode, { radius: 10 }).addTo(map);
+  L.heatLayer(listOfNode, { radius: 12 }).addTo(map);
 }
 
 function onDefaultCoordinateButton(e) {
