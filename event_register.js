@@ -3,7 +3,15 @@ urlButton.addEventListener("click", onUrlButton);
 defaultCoordinateButton.addEventListener("click", onDefaultCoordinateButton);
 
 function onMapClick(e) {
-  alert("You clicked the map at " + e.latlng);
+  latlngString = String(e.latlng).split("(");
+  latLgn = latlngString[1].split(")");
+  finalLatLgn = latLgn[0].split(",");
+  value = `{
+    "lat": ${finalLatLgn[0]},
+    "lng": ${finalLatLgn[1]},
+    "value": 10
+  }`;
+  alert("You clicked the map at \n" + value);
 }
 
 async function onUrlButton(e) {
